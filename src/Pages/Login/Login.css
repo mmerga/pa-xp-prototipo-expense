@@ -1,0 +1,83 @@
+.Login{
+    height: 100%;
+    width: 100%;
+}
+
+.banner-wrapper{
+    height: 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.login-text-wrapper{
+    height: 60%;
+    padding: 1rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    color: #1f1f1f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.login-text-wrapper p:first-child{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.login-text-wrapper p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#floatingInput{
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#floatingInput div,
+#floatingInput input{
+    background-color: #e6e6e6 !important;
+    border-radius: 10px;
+}
+
+#floatingInput input{
+    border: 1px solid #d8d8d8;
+}
+
+#floatingInput label{
+    color: #aeaeae;
+    font-size: 0.8rem;
+}
+
+
+.toogle-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.login-button-wrapper{
+    width: 100%;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.login-button-wrapper p:nth-child(1){
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.login-button-wrapper p:nth-child(2){
+    cursor: pointer;
+}
+
+.login-button-wrapper p:nth-child(2):hover{
+    transform: scale(0.95);
+}

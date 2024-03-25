@@ -1,0 +1,21 @@
+.PrimaryButton{
+    background-color: #EEBE03;
+    border: none !important;
+    color: #1f1f1f;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.PrimaryButton:hover{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.PrimaryButton:active{
+    transform: scale(0.9);
+}
