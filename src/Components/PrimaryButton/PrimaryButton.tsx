@@ -6,13 +6,13 @@ export default function PrimaryButton(props) {
     const {text, click} = props;
     return (
         <>
-            <button className="PrimaryButton">
-                <Link
-                    to={click}
-                    relative="path">
+            <Link
+                to={click}
+                relative="path">
+                <button className="PrimaryButton">
                     {text}
-                </Link>
-            </button>
+                </button>
+            </Link>
         </>
     );
 }
