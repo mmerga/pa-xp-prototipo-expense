@@ -7,6 +7,19 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
     const [isShow, setIsShow] = useState(true);
+    const [password, setPassword] = useState('');
+    const [buttonDisabled, setButtonDisabled] = useState(true);
+
+    function handlePasswordChange(e: React.ChangeEvent<HTMLInputElement>) {
+        setPassword(prev=>{
+            if(e.target.value.length >= 8){
+                setButtonDisabled(false)
+            } else {
+                setButtonDisabled(true)
+            }
+            return e.target.value
+        });
+    }
 
     function handleClickConfirm() {
         setIsShow(false)
@@ -64,10 +77,11 @@ export default function Login() {
 
             <div id="floatingInput">
                 <div  className="form-floating mb-3">
-                    <input type="passoword" className="form-control" id="floatingInput" placeholder="Senha" />
+                    <input type="password" className="form-control" id="floatingInput" placeholder="Senha" onChange={handlePasswordChange} value={password}/>
                     <label htmlFor="floatingInput">Senha</label>
                 </div>
             </div>
+            {buttonDisabled && password.length > 0 &&<label className="error-message">A senha deve ter pelo menos 8 caracteres.</label>}
 
         </div>
 
@@ -82,7 +96,7 @@ export default function Login() {
                 </p>
             </div>
             <div>
-                <label ><PrimaryButton text="Acessar com a senha"/></label>
+                <label ><PrimaryButton text="Acessar com a senha" isDisabled={buttonDisabled}/></label>
                 <label ><PrimaryButton text="Acessar com Touch ID"/></label>
             </div>
         </div>

@@ -4,6 +4,13 @@
     text-wrap: balance;
 }
 
+.error-message{
+    display: block;
+    margin-top: -0.5rem;
+    font-size: 0.8rem;
+    color: red;
+}
+
 .banner-wrapper{
     height: 40%;
     border-top-left-radius: 10px;

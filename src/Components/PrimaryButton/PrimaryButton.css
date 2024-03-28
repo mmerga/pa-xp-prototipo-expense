@@ -11,11 +11,17 @@
     cursor: pointer;
 }
 
-.PrimaryButton:hover{
+.PrimaryButton:disabled{
+    background-color: gray;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.PrimaryButton:hover:not(:disabled){
     transform: scale(0.95);
     opacity: 0.8;
 }
 
-.PrimaryButton:active{
+.PrimaryButton:active:not(:disabled){
     transform: scale(0.9);
 }
