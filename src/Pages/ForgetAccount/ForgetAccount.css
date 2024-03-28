@@ -69,3 +69,8 @@
    bottom: 40px;
    left: 0;
 }
+
+.forget-account-button-wrapper label{
+    display: block;
+    width: 100%;
+}

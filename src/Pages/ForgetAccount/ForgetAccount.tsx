@@ -56,8 +56,8 @@ export default function ForgetAccount() {
                                 <label htmlFor="floatingInputDate">Data de Nascimento</label>
                             </div>
                         </div>
-                        <div className="forget-account-button-wrapper" onClick={handleClickConfirm}>
-                            <PrimaryButton text="Confirmar" />
+                        <div className="forget-account-button-wrapper">
+                            <label onClick={handleClickConfirm}><PrimaryButton text="Confirmar" /></label>
                         </div>
                     </form>
                 </div>
