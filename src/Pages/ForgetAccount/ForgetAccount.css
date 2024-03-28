@@ -1,0 +1,71 @@
+.ForgetAccount{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forget-account-infos{
+    height: 25%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forget-account-infos i{
+    align-self: flex-start;
+    justify-self: start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}   
+
+.forget-account-infos i:hover{
+    transform: scale(1.1);
+}
+
+.forget-account-infos p{
+    font-weight: normal;
+    text-wrap: balance;
+}
+
+.forget-account-form-wrapper{
+    height: 75%;
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.forget-account-form-wrapper p{
+    color: black;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.forget-account-form{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.forget-account-form #floatingInput{
+    margin-top: 1rem;
+}
+
+
+.forget-account-button-wrapper{
+   position: absolute;
+   width: 100%;
+   bottom: 40px;
+   left: 0;
+}

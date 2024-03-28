@@ -51,7 +51,11 @@
 
 #floatingInput label{
     color: #aeaeae;
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+#floatingInput label::after{
+    background-color: inherit !important;
 }
 
 
@@ -66,7 +70,12 @@
 .login-button-wrapper{
     width: 100%;
     margin-top: auto;
+}
+
+.login-button-wrapper p{
     transition: all 0.3s ease;
+    width: fit-content;
+    margin: 0 auto 1rem;
 }
 
 .login-button-wrapper p:nth-child(1){
@@ -74,10 +83,10 @@
     font-weight: normal;
 }
 
-.login-button-wrapper p:nth-child(2){
+.login-button-wrapper p{
     cursor: pointer;
 }
 
-.login-button-wrapper p:nth-child(2):hover{
+.login-button-wrapper p:hover{
     transform: scale(0.95);
 }

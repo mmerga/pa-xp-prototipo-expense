@@ -35,7 +35,13 @@ export default function Login() {
 
                 <div className="login-button-wrapper">
                     <div>
-                        <p>Esqueci minha senha.</p>
+                        <p>
+                            <Link
+                                to='/faccount'
+                                relative="path">
+                                Esqueci minha conta.
+                            </Link>
+                        </p>
                         <p>
                             <Link
                                 to='/register'
@@ -45,7 +51,7 @@ export default function Login() {
                         </p>
                     </div>
                     <div>
-                        <PrimaryButton text="Continuar" click={'/'} />
+                        <PrimaryButton text="Continuar" click={'/'}/>
                     </div>
                 </div>
 
